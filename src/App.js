@@ -10,7 +10,7 @@ import Register from "./pages/LoginPage/Register";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import NewQuestion from "./pages/Question/NewQuestion";
+import AskQuestion from "./pages/Question/AskQuestion";
 import Answer from "./pages/Answer/Answer";
 import { UserContext } from "./context/UserContext";
 
@@ -57,7 +57,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/newquestion" element={<NewQuestion />} />
+        <Route path="/newquestion" element={<AskQuestion />} />
         <Route path="/newanswer/:id" element={<Answer />} />
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
